@@ -35,6 +35,26 @@ for_window [class="^.*"] border pixel 2
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# for full screen screenshot
+bindsym $mod exec code
+
+bindsym Print exec scrot -q 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+
+# for focussed window
+bindsym Ctrl+Print exec scrot -uq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+
+# for selected region
+bindsym --release Shift+Print exec scrot -sq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+
+# for full screen to clipboard
+bindsym $mod+Print exec scrot -q 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+
+# for focussed window to clipboard
+bindsym $mod+Ctrl+Print exec scrot -uq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+
+# for selected region to clipboard
+bindsym --release $mod+Shift+Print exec scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -74,6 +94,9 @@ bindsym $mod+Shift+Return exec google-chrome-stable
 
 # launch file explorer
 bindsym $mod+Shift+f exec urxvt -e ranger
+
+# laucnh htop
+bindsym $mod+Shift+p exec urxvt -e htop
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -123,7 +146,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-bindsym $mod+p exec "rofi -show window"
+# bindsym $mod+p exec "rofi -show window"
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
