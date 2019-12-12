@@ -36,8 +36,6 @@ for_window [class="^.*"] border pixel 2
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # for full screen screenshot
-bindsym $mod exec code
-
 bindsym Print exec scrot -q 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
 
 # for focussed window
