@@ -15,9 +15,8 @@ gaps inner 10
 gaps outer 10
 
 exec picom &
-exec udiskie
 exec "xset -b"
-exec "feh --bg-scale /home/probe/Pictures/Wallpapers/walll.jpg" 
+exec "feh --bg-scale /home/probe/Pictures/Vibrant/purple.jpg" 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
