@@ -27,7 +27,7 @@ rofi.auto-select: true
 ! URxvt Color theme
 ! ------------------------------------------------------------------------------
  
-URxvt*font: xft:Hack:pixelsize=14:antialiasing=true:size=14,xft:DejaVu Sans:size=12
+URxvt*font: xft:Fira\ Code:pixelsize=14:antialiasing=true:size=14,xft:DejaVu Sans:size=12
 URxvt*letterspace: 1
 URxvt*scrollBar: false
 URxvt.intensityStyles: false
