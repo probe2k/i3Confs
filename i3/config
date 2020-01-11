@@ -14,7 +14,7 @@ set $mod Mod4
 gaps inner 10
 gaps outer 10
 
-exec picom &
+exec --no-startup-id picom &
 exec "xset -b"
 exec "feh --bg-scale /home/probe/Pictures/Vibrant/polyblack.jpg" 
 
