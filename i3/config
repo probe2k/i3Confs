@@ -87,7 +87,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec urxvt
 
 # start a browser
-bindsym $mod+Shift+Return exec chromium
+bindsym $mod+Shift+Return exec firefox
 
 # launch file explorer
 bindsym $mod+Shift+f exec urxvt -e ranger
