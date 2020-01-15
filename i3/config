@@ -36,22 +36,22 @@ for_window [class="^.*"] border pixel 2
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # for full screen screenshot
-bindsym Print exec scrot -q 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+bindsym Print exec --no-startup-id scrot -q 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
 
 # for focussed window
-bindsym Ctrl+Print exec scrot -uq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+bindsym Ctrl+Print exec --no-startup-id scrot -uq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
 
 # for selected region
-bindsym --release Shift+Print exec scrot -sq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
+bindsym --release Shift+Print exec --no-startup-id scrot -sq 100 '/home/probe/Pictures/Screenshots/%F_%T_$wx$h.png'
 
 # for full screen to clipboard
-bindsym $mod+Print exec scrot -q 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+bindsym $mod+Print exec --no-startup-id scrot -q 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
 # for focussed window to clipboard
-bindsym $mod+Ctrl+Print exec scrot -uq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+bindsym $mod+Ctrl+Print exec --no-startup-id scrot -uq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
 # for selected region to clipboard
-bindsym --release $mod+Shift+Print exec scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+bindsym --release $mod+Shift+Print exec --no-startup-id scrot -sq 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
