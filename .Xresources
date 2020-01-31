@@ -33,7 +33,7 @@ URxvt*scrollBar: false
 URxvt.intensityStyles: false
 URxvt.background: [75]#000000
 URxvt.transparent: true
-URxvt.shading: 45
+URxvt.shading: 25
  
 Xft.dpi: 100
 Xft.antialias: true
