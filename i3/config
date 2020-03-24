@@ -17,7 +17,7 @@ gaps outer 10
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id picom &
 exec --no-startup-id "xset -b"
-exec --no-startup-id "feh --bg-scale /home/probe/Pictures/Wallpapers/bulblight.jpg" 
+exec --no-startup-id "feh --bg-scale /home/probe/Pictures/Wallpapers/walll.jpg" 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -59,10 +59,10 @@ bindsym --release $mod+Shift+Print exec --no-startup-id scrot -sq 100 '/tmp/%F_%
 exec --no-startup-id nm-applet
 
 # lock screen setup conf
-bindsym Ctrl+l exec --no-startup-id /home/probe/.config/i3/scripts/lock.sh
+bindsym $mod+l exec --no-startup-id /home/probe/.config/i3/scripts/lock.sh
 
 # system suspend
-bindsym Ctrl+End exec --no-startup-id systemctl suspend
+bindsym $mod+End exec --no-startup-id systemctl suspend
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -93,7 +93,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec urxvt
 
 # start a browser
-bindsym $mod+Shift+Return exec google-chrome-stable
+bindsym $mod+Shift+Return exec firefox
 
 # launch file explorer
 bindsym $mod+Shift+f exec urxvt -e ranger
@@ -105,6 +105,8 @@ bindsym $mod+Shift+p exec urxvt -e htop
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
+# bindsym XF86Search exec --no-startup-id dmenu_run
+
 bindsym XF86Search exec "rofi -show run"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -112,10 +114,10 @@ bindsym XF86Search exec "rofi -show run"
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -150,6 +152,9 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # bindsym $mod+p exec "rofi -show window"
+
+# External display controller dmenu manager
+bindsym $mod+p exec --no-startup-id /home/probe/.config/i3/scripts/display.sh
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
