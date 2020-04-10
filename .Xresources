@@ -3,17 +3,19 @@
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
 !                  Background   Foreground  Background Alternate    Highlight Background    Highlight Foreground
-rofi.color-window: #131620,     #c7a57c,    #131620
+rofi.color-window: #000000,     #c7a57c,    #131620
 rofi.color-normal: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
 rofi.color-active: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
-rofi.color-urgent: #FF5555,     #070015,    #FF5555,                #7c7d7c,                #131620
-rofi.terminal: urxvt
-rofi.fuzzy: true
+!rofi.color-urgent: #FF5555,     #070015,    #FF5555,                #7c7d7c,                #131620
+!rofi.terminal: urxvt
+!rofi.fuzzy: true
+rofi.modi: run
 rofi.kb-cancel: Escape,Control+c
 rofi.hide-scrollbar: true
 rofi.separator-style: dash
-rofi.fake-transparency: true
-rofi.auto-select: true
+rofi.opacity: 100
+!rofi.fake-transparency: true
+!rofi.auto-select: true
 
 ! extra confs
 !rofi.color-enabled: true
@@ -21,7 +23,6 @@ rofi.auto-select: true
 !rofi.color-normal: argb:002f343f, #d8dee8, argb:002f343f, argb:002f343f, #bf616a
 !rofi.color-active: #2f343f, #b48ead, #2f343f, #2f343f, #93e5cc
 !rofi.color-urgent: #2f343f, #ebcb8b, #2f343f, #2f343f, #ebcb8b
-
  
 ! ------------------------------------------------------------------------------
 ! URxvt Color theme
@@ -31,10 +32,10 @@ URxvt*font: xft:Fira\ Code:pixelsize=14:antialiasing=true:size=14,xft:DejaVu San
 URxvt*letterspace: 1
 URxvt*scrollBar: false
 URxvt.intensityStyles: false
-URxvt.background: [75]#000000
+!URxvt.background: [75]#000000
 URxvt.transparent: true
 URxvt.shading: 20
-URxvt.blurRadius: 80
+! URxvt.blurRadius: 80
  
 Xft.dpi: 100
 Xft.antialias: true
@@ -133,7 +134,7 @@ URxvt*buffered:         false
  
  
 ! termtype
-UXTerm*termName: xterm-256color
+UXTerm*termName: rxvt-256color
  
  
 UXTerm*cursorColor:        white
