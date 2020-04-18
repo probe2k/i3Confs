@@ -17,7 +17,8 @@ gaps outer 10
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id picom &
 exec --no-startup-id "xset -b"
-exec --no-startup-id "feh --bg-scale /home/probe/Pictures/Wallpapers/walll.jpg" 
+exec --no-startup-id "hsetroot -solid #000000"
+#exec --no-startup-id "feh --bg-scale /home/probe/Pictures/Wallpapers/wpwall.jpg" 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
