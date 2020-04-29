@@ -24,8 +24,8 @@ exec --no-startup-id "feh --bg-scale /home/probe/Pictures/untitled.png"
 # is used in the bar {} block below.
 font pango:Cantarell 10
 
-smart_borders on
-for_window [class="^.*"] border pixel 2 
+#smart_borders on
+for_window [class="^.*"] border pixel 0 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
