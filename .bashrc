@@ -22,6 +22,7 @@ echo -e " ${RED}
             ░         ░ ░   ░         ░  ░
     	${GRE}       Lord of Darkness  ${RED}░${BLU} probe2k
 				   ${NC}"
-echo -e "${CYA}$(date)"
+echo -e "${CYA}$(date)${NC}"
 
 #PS1="\n[\[\e[32m\]\u\[\e[m\]] [\[\e[36m\]\h\[\e[m\]] [\[\e[34m\]\w\[\e[m\]]\n\[\e[35m\]$ >\[\e[m\] "
+
