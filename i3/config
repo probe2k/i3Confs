@@ -19,7 +19,7 @@ exec --no-startup-id picom
 exec --no-startup-id "xset -b"
 #exec --no-startup-id "hsetroot -solid #000000"
 exec --no-startup-id "feh --bg-scale /home/probe/Pictures/wall.png" 
-
+# exec --no-startup-id "mplayer -rootwin -loop 0 -ao null ~/mywall_samurai.mp4"
 # setup xinput confs -> not overriding /etc/X11/xorg.conf.d/40-libinput.conf
 #
 #exec --no-startup-id "xinput set-prop 12 306 1"
@@ -100,7 +100,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec urxvt
 
 # start a browser
-bindsym $mod+Shift+Return exec chromium
+bindsym $mod+Shift+Return exec google-chrome-stable
 
 # launch file explorer
 bindsym $mod+Shift+f exec urxvt -e ranger
