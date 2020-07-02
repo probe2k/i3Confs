@@ -33,14 +33,14 @@ URxvt*letterspace: 1
 URxvt*scrollBar: false
 !URxvt.intensityStyles: true
 !URxvt.background: [75]#000000
-!URxvt.transparent: true
-!URxvt.shading: 35
+URxvt.transparent: true
+URxvt.shading: 35
 !URxvt.blurRadius: 80
  
 !Xft.dpi: 100
-!Xft.antialias: true
+Xft.antialias: true
 !Xft.hinting: true
-!Xft.rgba: rgb
+Xft.rgba: rgb
 !Xft.autohint: false
 !Xft.hintstyle: hintslight
 !Xft.lcdfilter: lcddefault
