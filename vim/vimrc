@@ -18,9 +18,11 @@ runtime! archlinux.vim
 "let skip_defaults_vim=1
 "
 
-color desert
+color rdark-terminal2 
 set listchars=tab:\|\ 
 set list
 set cursorline
 set relativenumber
 set number
+set tabstop=4
+set shiftwidth=4
