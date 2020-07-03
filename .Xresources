@@ -28,7 +28,8 @@ rofi.opacity: 100
 ! URxvt Color theme
 ! ------------------------------------------------------------------------------
  
-URxvt*font: xft:monospace:pixelsize=14:antialiasing=true:size=14,xft:DejaVu Sans:size=12
+URxvt*font: xft:Fira Code Retina:pixelsize=14:antialiasing=true:size=14,xft:DejaVu Sans:size=12
+!URxvt*font: xft:monospace:pixelsize=14:antialiasing=true:size=14
 URxvt*scrollBar: false
 URxvt.transparent: true
 URxvt.shading: 35
