@@ -32,7 +32,7 @@ URxvt*font: xft:Fira Code Retina:pixelsize=14:antialiasing=true:size=14,xft:Deja
 !URxvt*font: xft:monospace:pixelsize=14:antialiasing=true:size=14
 URxvt*scrollBar: false
 URxvt.transparent: true
-URxvt.shading: 35
+URxvt.shading: 25
 !URxvt.blurRadius: 80
  
 !Xft.dpi: 100
@@ -89,8 +89,8 @@ URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.internalBorder:  5
 !URxvt.externalBorder:  5
 !URxvt.borderLess: true
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.iso14755: False
 !URxvt.keysym.Control-Up:   \033[1;5A
 !URxvt.keysym.Control-Down:    \033[1;5B
