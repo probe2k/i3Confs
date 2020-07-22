@@ -78,7 +78,7 @@ bindsym $mod+End exec --no-startup-id systemctl suspend
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+ && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%- && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks
 
 # media controls
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
