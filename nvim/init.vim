@@ -1,6 +1,9 @@
 " Source themes from ~/.config/nvim/themes/airline.vim
 source /home/probe/.config/nvim/themes/airline.vim
 
+" Source keymaps to access buffers
+source /home/probe/.config/nvim/keymaps/shortcuts.vim
+
 " Plugins for vim
 call plug#begin('/home/probe/.config/nvim/plugged')
 " Tools
@@ -38,7 +41,6 @@ set autoread
 set cursorline
 set relativenumber
 set number
-set showtabline=2
 
 " Search
 set ignorecase
