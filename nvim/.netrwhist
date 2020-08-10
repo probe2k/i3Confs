@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/probe/.config'
+let g:netrw_dirhist_3='/home/probe/.config/i3'
+let g:netrw_dirhist_2='/home/probe/.config'
+let g:netrw_dirhist_1='/home/probe/.config/nvim/plugged/vim-airline/autoload/airline'
