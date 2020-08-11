@@ -4,6 +4,9 @@ source /home/probe/.config/nvim/themes/airline.vim
 " Source keymaps to access buffers
 source /home/probe/.config/nvim/keymaps/shortcuts.vim
 
+" Source coc.vim for intelliSense autocompletion
+" source /home/probe/.config/nvim/coc-config/coc.vim
+
 " Plugins for vim
 call plug#begin('/home/probe/.config/nvim/plugged')
 " Tools
@@ -14,6 +17,9 @@ call plug#begin('/home/probe/.config/nvim/plugged')
 	Plug 'tpope/vim-markdown'
 	Plug 'ap/vim-css-color' " Displays a preview of colors with CSS
 	Plug 'vim-scripts/fountain.vim'
+
+" Autocomplete - CoC
+"	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Colorscheme
 "	Plug 'morhetz/gruvbox'
@@ -49,3 +55,5 @@ set smartcase
 " Auto completion
 set wildmenu
 
+" Set space indenter
+set lcs+=space:•
