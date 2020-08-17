@@ -28,8 +28,8 @@ rofi.hide-scrollbar: true
 ! URxvt Color theme
 ! ------------------------------------------------------------------------------
  
-!URxvt*font: xft:Fira Code Retina:pixelsize=15:antialiasing=true:size=14,xft:DejaVu Sans:size=12
-URxvt*font: xft:Cascadia Mono PL:pixelsize=14:antialiasing=true:size=14
+!URxvt*font: xft:Cascadia Mono PL:pixelsize=14:antialiasing=true:size=14,xft:DejaVu Sans:size=12
+URxvt*font: xft:CascadiaMonoPL:pixelsize=15:antialiasing=true:size=14
 URxvt*scrollBar: false
 !URxvt.transparent: true
 !URxvt.shading: 25
@@ -54,15 +54,15 @@ Xft.rgba: rgb
 
 ! red
 *.color1:       #ff0000
-*.color9:       #ff0000
+*.color9:       #ff5500
 
 ! green
 *.color2:       #33ff00
-*.color10:      #33ff00
+*.color10:      #64ff4d
 
 ! yellow
 *.color3:       #ff0099
-*.color11:      #ff0099
+*.color11:      #ffff00
 
 ! blue
 *.color4:       #0066ff
