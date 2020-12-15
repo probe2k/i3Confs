@@ -14,6 +14,7 @@ set $mod Mod4
 gaps inner 10
 gaps outer 0
 exec --no-startup-id "xrandr -r 47"
+exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
 exec --no-startup-id picom
 exec --no-startup-id "xset -b"
 #exec --no-startup-id "hsetroot -solid #000000"
@@ -76,8 +77,8 @@ bindsym $mod+End exec --no-startup-id systemctl suspend
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 #bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+ && pkill -RTMIN+1 i3blocks 
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%- && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 10%+ && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 10%- && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks
 
 # media controls
@@ -100,7 +101,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec urxvt
 
 # start a browser
-bindsym $mod+Shift+Return exec google-chrome-stable
+bindsym $mod+Shift+Return exec firefox
 
 # launch file explorer
 bindsym $mod+Shift+f exec urxvt -e ranger
@@ -255,5 +256,9 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango: Hack 9 
 	position top
+	colors {
+		background #00000080
+	}
+	i3bar_command i3bar -t
 	status_command i3blocks
 }
