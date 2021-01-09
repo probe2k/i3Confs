@@ -6,4 +6,5 @@ nnoremap <S-Del> : bdelete<CR>
 nnoremap <A-Del> : bdelete!<CR>
 nnoremap <C-n> : execute ":buffer ".(bufnr("%") + 1)<CR>
 nnoremap <C-p> : execute ":buffer ".(bufnr("%") - 1)<CR>
-nnoremap <C-a> : badd 
+nnoremap <C-a> : badd
+nnoremap <C-k> : NERDTree<CR>
