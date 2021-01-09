@@ -15,11 +15,11 @@ rofi.hide-scrollbar: true
 ! ------------------------------------------------------------------------------
 
 !URxvt*font: xft:CascadiaMonoPL:pixelsize=14:antialiasing=true:size=14
-URxvt*font: xft:Hack:pixelsize=14:antialiasing=true:size=14
+URxvt*font: xft:AnonymicePowerline:pixelsize=16:antialiasing=true:size=14
 URxvt*scrollBar: false
 URxvt.transparent: true
 URxvt.shading: 20
-URxvt.letterSpace: -1
+!URxvt.letterSpace: -1
 Xft.antialias: true
 Xft.rgba: rgb
 
