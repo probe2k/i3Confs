@@ -21,7 +21,6 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-
 set showtabline=2
 set noshowmode
 
