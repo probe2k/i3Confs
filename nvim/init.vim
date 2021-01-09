@@ -18,6 +18,9 @@ call plug#begin('/home/probe/.config/nvim/plugged')
 	Plug 'ap/vim-css-color' " Displays a preview of colors with CSS
 	Plug 'vim-scripts/fountain.vim'
 
+" File Explorer - nerdtree
+"	Plug 'scrooloose/nerdtree'
+
 " Autocomplete - CoC
 "	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -53,7 +56,8 @@ set ignorecase
 set smartcase
 
 " Auto completion
-set wildmenu
+" set wildmenu
 
 " Set space indenter
 set lcs+=space:•
+
