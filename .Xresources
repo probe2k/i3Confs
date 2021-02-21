@@ -1,14 +1,14 @@
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
-rofi.color-enabled: true
+!rofi.color-enabled: true
 !                  Background   Foreground  Background Alternate    Highlight Background    Highlight Foreground
-rofi.color-window: #000000,     #c7a57c,    #131620
-rofi.color-normal: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
-rofi.color-active: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
-rofi.terminal: urxvt
-rofi.modi: run
-rofi.hide-scrollbar: true
+!rofi.color-window: #000000,     #c7a57c,    #131620
+!rofi.color-normal: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
+!rofi.color-active: #131620,     #c7a57c,    #131620,                #7c7d7c,                #131620
+!rofi.terminal: urxvt
+!rofi.modi: run
+!rofi.hide-scrollbar: true
 
 ! ------------------------------------------------------------------------------
 ! URxvt Color theme
@@ -16,7 +16,7 @@ rofi.hide-scrollbar: true
 
 URxvt*font: xft:CascadiaMonoPL:pixelsize=14:antialiasing=true:size=14
 !URxvt*font: xft:AnonymicePowerline:pixelsize=16:antialiasing=true:size=14
-!URxvt*font: xft:MenloforPowerline:pixelsize=14:antialiasing=true:size=14
+!URxvt*font: xft:MonacoforPowerline:pixelsize=13:antialiasing=true:size=14
 URxvt*scrollBar: false
 URxvt.transparent: true
 URxvt.shading: 20
