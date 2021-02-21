@@ -6,7 +6,7 @@ Houses a heavy configuration for a nice i3-gaps rice
 
 Basic system tools with build-utils and other fancies
 
-## Image
+## Images
 
 ![Desktop View](asset/img1.jpeg)
 
