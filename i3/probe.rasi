@@ -70,7 +70,7 @@ configuration {
 }
 
 #inputbar {
-    color: @lightgreen;
+    color: @lightcyan;
     padding: 11px;
     background-color: @tlightblack;
     border: 2px 2px 2px 2px;
