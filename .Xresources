@@ -2,8 +2,9 @@ URxvt*font: xft:CascadiaMonoPL:pixelsize=14:antialiasing=true:size=14
 !URxvt*font: xft:AnonymicePowerline:pixelsize=16:antialiasing=true:size=14
 !URxvt*font: xft:FiraCode:pixelsize=13:antialiasing=true:size=14
 URxvt*scrollBar: false
-!URxvt.transparent: true
-!URxvt.shading: 15
+URxvt.transparent: true
+URxvt.shading: 15
+URxvt.blurRadius: 55
 !URxvt.letterSpace: -1
 Xft.antialias: true
 Xft.rgba: rgb
