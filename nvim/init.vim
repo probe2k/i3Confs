@@ -37,8 +37,8 @@ set history=100
 
 " Colorscheme
 " set background=dark
-colorscheme rdark-terminal2
-
+" colorscheme rdark-terminal2
+set termguicolors
 " Tabbing to 4
 set list
 set listchars=tab:\|\ 
@@ -49,7 +49,7 @@ set shiftwidth=4
 syntax on
 set nowrap
 set autoread
-set cursorline
+" set cursorline
 set relativenumber
 set number
 
@@ -61,4 +61,4 @@ set smartcase
 " set wildmenu
 
 " Set space indenter
-set lcs+=space:•
+" set lcs+=space:•
