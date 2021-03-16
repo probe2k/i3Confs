@@ -16,7 +16,7 @@ call plug#begin('/home/probe/.config/nvim/plugged')
 	Plug 'dart-lang/dart-vim-plugin'
 " Syntax
 	Plug 'tpope/vim-markdown'
-	Plug 'ap/vim-css-color' " Displays a preview of colors with CSS
+"	Plug 'ap/vim-css-color' " Displays a preview of colors with CSS
 	Plug 'vim-scripts/fountain.vim'
 	Plug 'preservim/nerdtree'
 
@@ -49,7 +49,7 @@ set shiftwidth=4
 syntax on
 set nowrap
 set autoread
-" set cursorline
+set cursorline
 set relativenumber
 set number
 
