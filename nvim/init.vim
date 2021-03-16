@@ -12,6 +12,7 @@ call plug#begin('/home/probe/.config/nvim/plugged')
 " Tools
 	Plug 'vim-airline/vim-airline'
 	Plug 'junegunn/goyo.vim'
+	Plug 'ryanoasis/vim-devicons'
 	Plug 'dart-lang/dart-vim-plugin'
 " Syntax
 	Plug 'tpope/vim-markdown'
@@ -61,8 +62,3 @@ set smartcase
 
 " Set space indenter
 set lcs+=space:•
-
-" Set NERDTree to start with vim argument
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
