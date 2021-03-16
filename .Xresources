@@ -92,6 +92,7 @@ Xft.rgba: rgb
 *.color9: #A0A19E
 *.color2: #B1B1B1
 *.color10: #161B1D
+!*.color10: #303030
 *.color3: #CDCDCD
 *.color11: #e8e8e6
 *.color4: #a2a2a1
