@@ -49,7 +49,7 @@ set shiftwidth=4
 syntax on
 set nowrap
 set autoread
-" set cursorline
+set cursorline
 set relativenumber
 set number
 
