@@ -2,108 +2,39 @@
 !URxvt*font: xft:RobotoMonoforPowerline:pixelsize=16:antialiasing=true:size=14
 URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14:antialiasing=true:size=14
 URxvt*scrollBar: false
-URxvt.transparent: true
-URxvt.shading: 20
+!URxvt.transparent: true
+!URxvt.shading: 20
 !URxvt.blurRadius: 55
 !URxvt.letterSpace: 0.5
 Xft.antialias: true
 Xft.rgba: rgb
 
-! special
-!*.foreground:   #d0d0d0
-!*.background:   #000000
-!*.cursorColor:  #d0d0d0
-
-! black
-!*.color0:       #000000
-!*.color8:       #808080
-
-! red
-!*.color1:       #ff0000
-!*.color9:       #ff5500
-
-! green
-!*.color2:       #33ff00
-!*.color10:      #64ff4d
-
-! yellow
-!*.color3:       #ffff00
-!*.color11:      #ffff00
-
-! blue
-!*.color4:       #0066ff
-!*.color12:      #0066ff
-
-! magenta
-!*.color5:       #cc00ff
-!*.color13:      #cc00ff
-
-! cyan
-!*.color6:       #00ffff
-!*.color14:      #00ffff
-
-! white
-!*.color7:       #d0d0d0
-!*.color15:      #ffffff
-
-
-! special
-!*.foreground:   #7ea2b4
-*.foreground:   #b8ccd6
-*.background:   #161b1d
-*.cursorColor:  #b8ccd6
-
-! black
-!*.color0:       #161b1d
-!*.color8:       #5a7b8c
-
-! red
-!*.color1:       #d22d72
-!*.color9:       #b31818
-
-! green
-!*.color2:       #568c3b
-!*.color2:       #568c3b
-!*.color10:      #000000
-
-! yellow
-!*.color3:       #8a8a0f
-!*.color11:      #8a8a0f
-
-! blue
-!*.color4:       #257fad
-!*.color12:      #257fad
-
-! magenta
-!*.color5:       #5d5db1
-!*.color13:      #5d5db1
-
-! cyan
-!*.color6:       #2d8f6f
-!*.color14:      #2d8f6f
-
-! white
-!*.color7:       #7ea2b4
-!*.color15:      #ebf8ff
-
-*.color0: #000000
-*.color8: #82827E
-*.color1: #909090
-*.color9: #A0A19E
-*.color2: #B1B1B1
-*.color10: #161B1D
-!*.color10: #303030
-*.color3: #CDCDCD
-*.color11: #e8e8e6
-*.color4: #a2a2a1
-*.color12: #82827E
-*.color5: #909090
-*.color13: #A0A19E
-*.color6: #B1B1B1
-*.color14: #BFC0BF
-*.color7: #CDCDCD
-*.color15: #e8e8e6
-
+*.background: #282828
+*.foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
 
 URxvt.perl-ext-common: clipboard,font-size
