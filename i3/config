@@ -256,9 +256,9 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango: Hack 9
 	position top
-	#colors {
-	#	background #00000050
-	#}
+	colors {
+		background #282828
+	}
 	#i3bar_command i3bar -t
 	status_command i3blocks
 }
