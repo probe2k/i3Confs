@@ -24,3 +24,6 @@ let g:airline_symbols.whitespace = 'Ξ'
 
 set showtabline=2
 set noshowmode
+
+" gruvbox settings
+let g:gruvbox_italic=1
