@@ -1,42 +1,26 @@
-!URxvt*font: xft:CascadiaMonoPL:pixelsize=14:antialiasing=true:size=14
-!URxvt*font: xft:RobotoMonoforPowerline:pixelsize=16:antialiasing=true:size=14
-URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14:antialiasing=true:size=14
-URxvt*scrollBar: false
-!URxvt.transparent: true
-!URxvt.shading: 20
-!URxvt.blurRadius: 55
-!URxvt.letterSpace: 0.5
-Xft.antialias: true
-Xft.rgba: rgb
-
 *.background: #282828
 *.foreground: #ebdbb2
-! Black + DarkGrey
 *color0:  #282828
 *color8:  #928374
-! DarkRed + Red
 *color1:  #cc241d
 *color9:  #fb4934
-! DarkGreen + Green
 *color2:  #98971a
 *color10: #b8bb26
-! DarkYellow + Yellow
 *color3:  #d79921
 *color11: #fabd2f
-! DarkBlue + Blue
 *color4:  #458588
 *color12: #83a598
-! DarkMagenta + Magenta
 *color5:  #b16286
 *color13: #d3869b
-! DarkCyan + Cyan
 *color6:  #689d6a
 *color14: #8ec07c
-! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
 
-
+URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14:antialiasing=true:size=14
+URxvt*scrollBar: false
+Xft.antialias: true
+Xft.rgba: rgb
 URxvt.perl-ext-common: clipboard,font-size
 URxvt.internalBorder:  5
 URxvt.keysym.M-c: perl:clipboard:copy
@@ -45,3 +29,11 @@ URxvt.iso14755: False
 URxvt.keysym.Control-Left:    \033[1;5D
 URxvt.keysym.Control-Right:    \033[1;5C
 
+rofi.modi:                           run
+rofi.width:                          50
+rofi.lines:                          18
+rofi.font:                           BlexMonoNerdFontMono 11
+rofi.color-normal:                   #282828,  #FFFFFF,  #282828,  #404040,  #FFFFFF
+rofi.color-window:                   #282828,      #303030
+rofi.padding:                        15
+rofi.hide-scrollbar:                 true
