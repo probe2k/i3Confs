@@ -41,7 +41,7 @@ colorscheme gruvbox
 " set termguicolors
 " Tabbing to 4
 set list
-set listchars=tab:\|\ 
+set listchars=tab:\│\ 
 set tabstop=4
 set shiftwidth=4
 
