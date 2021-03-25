@@ -122,6 +122,8 @@ bar {
 	position top
 	colors {
 		background #282828
+		focused_workspace #282828 #707070 #FFFFFF
+		inactive_workspace #282828 #282828 #FFFFFF
 	}
 	status_command i3blocks
 }
