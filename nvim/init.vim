@@ -1,5 +1,5 @@
 " Source themes from ~/.config/nvim/themes/airline.vim
-source /home/probe/.config/nvim/themes/airline.vim
+source /home/probe/.config/nvim/themes/themes.vim
 
 " Source keymaps to access buffers
 source /home/probe/.config/nvim/keymaps/shortcuts.vim
@@ -37,7 +37,7 @@ set history=100
 
 " Colorscheme
 " set background=dark
-colorscheme gruvbox
+colorscheme off
 " set termguicolors
 " Tabbing to 4
 set list
