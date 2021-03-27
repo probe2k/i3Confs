@@ -1,7 +1,7 @@
 set $mod Mod4
 
-gaps inner 10
-gaps outer 0
+gaps inner 20
+gaps outer 5
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
 exec --no-startup-id picom
@@ -120,10 +120,10 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango: Hack 9
 	position top
-	colors {
-		background #282828
-		focused_workspace #282828 #707070 #FFFFFF
-		inactive_workspace #282828 #282828 #FFFFFF
-	}
+#	colors {
+#		background #282828
+#		focused_workspace #282828 #707070 #FFFFFF
+#		inactive_workspace #282828 #282828 #FFFFFF
+#	}
 	status_command i3blocks
 }
