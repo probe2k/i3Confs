@@ -32,11 +32,12 @@ URxvt.keysym.Control-Left:    \033[1;5D
 URxvt.keysym.Control-Right:    \033[1;5C
 URxvt.transparent: true
 URxvt.shading: 20
+
 rofi.modi:                           run
 rofi.width:                          50
 rofi.lines:                          18
 rofi.font:                           BlexMonoNerdFontMono 11
-rofi.color-normal:                   #282828,  #FFFFFF,  #282828,  #404040,  #FFFFFF
-rofi.color-window:                   #282828,      #303030
+rofi.color-normal:                   #000000,  #FFFFFF,  #000000,  #282828,  #FFFFFF
+rofi.color-window:                   #000000,      #000000
 rofi.padding:                        15
 rofi.hide-scrollbar:                 true
