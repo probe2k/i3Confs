@@ -1,21 +1,53 @@
 *.background: #000000
 *.foreground: #b2b2b2
-*color0:  #282828
-*color8:  #928374
-*color1:  #cc241d
-*color9:  #fb4934
-*color2:  #98971a
-*color10: #b8bb26
-*color3:  #d79921
-*color11: #fabd2f
-*color4:  #458588
-*color12: #83a598
-*color5:  #b16286
-*color13: #d3869b
-*color6:  #689d6a
-*color14: #8ec07c
-*color7:  #bbbbbb
-*color15: #ebdbb2
+!*color0:  #282828
+!*color8:  #928374
+!*color1:  #cc241d
+!*color9:  #fb4934
+!*color2:  #98971a
+!*color10: #b8bb26
+!*color3:  #d79921
+!*color11: #fabd2f
+!*color4:  #458588
+!*color12: #83a598
+!*color5:  #b16286
+!*color13: #d3869b
+!*color6:  #689d6a
+!*color14: #8ec07c
+!*color7:  #bbbbbb
+!*color15: #ebdbb2
+
+! black
+*.color0:       #202020
+*.color8:       #606060
+
+! red
+*.color1:       #b91e2e
+*.color9:       #d14548
+
+! green
+*.color2:       #81957c
+*.color10:      #a7b79a
+
+! yellow
+*.color3:       #f9bb80
+*.color11:      #fae3a0
+
+! blue
+*.color4:       #356579
+*.color12:      #7491a1
+
+! magenta
+*.color5:       #2d2031
+*.color13:      #87314e
+
+! cyan
+*.color6:       #0b3452
+*.color14:      #0f829d
+
+! white
+*.color7:       #909090
+*.color15:      #fff0f0
 
 URxvt.blinkingCursor: 1
 URxvt.cursorUnderline: true
