@@ -1,4 +1,4 @@
-*.background: #282828
+*.background: #000000
 *.foreground: #b2b2b2
 *color0:  #282828
 *color8:  #928374
@@ -14,21 +14,24 @@
 *color13: #d3869b
 *color6:  #689d6a
 *color14: #8ec07c
-*color7:  #a89984
+*color7:  #bbbbbb
 *color15: #ebdbb2
 
+URxvt.blinkingCursor: 1
+URxvt.cursorUnderline: true
 URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14:antialiasing=true:size=14
 URxvt*scrollBar: false
 Xft.antialias: true
 Xft.rgba: rgb
 URxvt.perl-ext-common: clipboard,font-size
-URxvt.internalBorder:  5
+URxvt.internalBorder:  20
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.keysym.Control-Left:    \033[1;5D
 URxvt.keysym.Control-Right:    \033[1;5C
-
+URxvt.transparent: true
+URxvt.shading: 20
 rofi.modi:                           run
 rofi.width:                          50
 rofi.lines:                          18
