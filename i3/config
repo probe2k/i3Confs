@@ -1,7 +1,7 @@
 set $mod Mod4
 
 gaps inner 20
-gaps outer 5
+gaps outer 0
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
 exec --no-startup-id picom
