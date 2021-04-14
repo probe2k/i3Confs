@@ -1,0 +1,14 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+video/x-matroska=mpv.desktop;
+
+[Default Applications]
+x-scheme-handler/msteams=teams.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=brave.desktop
+x-scheme-handler/https=brave.desktop
+x-scheme-handler/about=brave.desktop
+
+[Removed Associations]
