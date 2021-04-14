@@ -1,12 +1,13 @@
 set $mod Mod4
 
-gaps inner 20
+gaps inner 30
 gaps outer 0
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
 exec --no-startup-id picom
 exec --no-startup-id "xset -b"
 exec --no-startup-id "feh --bg-scale /home/probe/.config/i3/wal.jpg" 
+#exec_always --no-startup-id /home/probe/.config/polybar/launch.sh
 font pango:Cantarell 10
 
 for_window [class="^.*"] border pixel 0 
@@ -38,7 +39,7 @@ floating_modifier $mod
 focus_follows_mouse no
 
 bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+Return exec chromium
+bindsym $mod+Shift+Return exec brave
 bindsym $mod+Shift+f exec urxvt -e ranger
 bindsym $mod+Shift+p exec urxvt -e htop
 bindsym $mod+Shift+q kill
@@ -120,10 +121,9 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango: Hack 9
 	position top
-#	colors {
-#		background #282828
-#		focused_workspace #282828 #707070 #FFFFFF
-#		inactive_workspace #282828 #282828 #FFFFFF
-#	}
+	colors {
+		background #00000020
+	}
+	i3bar_command i3bar -t
 	status_command i3blocks
 }
