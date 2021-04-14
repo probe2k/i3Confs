@@ -1,0 +1,15 @@
+volstat="$(amixer get Master)"
+
+echo "$volstat" | grep "\[off\]" >/dev/null && printf "🔇\\n" && exit
+
+vol=$(echo "$volstat" | grep -o "\[[0-9]\+%\]" | sed 's/[^0-9]*//g')
+
+if [ "$vol" > "70" ]; then
+	icon="🔊"
+elif [ "$vol" < "30" ]; then
+	icon="🔈"
+else
+	icon="🔉"
+fi
+
+printf "%s %s%%\\n" "$icon" "$vol"
