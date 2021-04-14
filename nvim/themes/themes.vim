@@ -68,3 +68,4 @@ set t_Co=256
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 highlight clear LineNr
+let g:lightline#bufferline#enable_devicons = 1
