@@ -17,37 +17,54 @@
 !*color7:  #bbbbbb
 !*color15: #ebdbb2
 
+*color0: #101010
+*color1: #960050
+*color2: #66aa11
+*color3: #c47f2c
+*color4: #30309b
+*color5: #7e40a5
+*color6: #3579a8
+*color7: #9999aa
+*color8: #303030
+*color9: #ff0090
+*color10: #80ff00
+*color11: #ffba68
+*color12: #5f5fee
+*color13: #bb88dd
+*color14: #4eb4fa
+*color15: #d0d0d0
+
 ! black
-*.color0:       #202020
-*.color8:       #606060
+!*.color0:       #202020
+!*.color8:       #606060
 
 ! red
-*.color1:       #b91e2e
-*.color9:       #d14548
+!*.color1:       #b91e2e
+!*.color9:       #d14548
 
 ! green
-*.color2:       #81957c
-*.color10:      #a7b79a
+!*.color2:       #81957c
+!*.color10:      #a7b79a
 
 ! yellow
-*.color3:       #f9bb80
-*.color11:      #fae3a0
+!*.color3:       #f9bb80
+!*.color11:      #fae3a0
 
 ! blue
-*.color4:       #356579
-*.color12:      #7491a1
+!*.color4:       #356579
+!*.color12:      #7491a1
 
 ! magenta
-*.color5:       #ffcc00
-*.color13:      #87314e
+!*.color5:       #ffcc00
+!*.color13:      #87314e
 
 ! cyan
-*.color6:       #0b3452
-*.color14:      #0f829d
+!*.color6:       #0b3452
+!*.color14:      #0f829d
 
 ! white
-*.color7:       #909090
-*.color15:      #fff0f0
+!*.color7:       #909090
+!*.color15:      #fff0f0
 
 URxvt.blinkingCursor: 1
 URxvt.cursorUnderline: true
@@ -71,5 +88,5 @@ rofi.lines:                          18
 rofi.font:                           BlexMonoNerdFontMono 11
 rofi.color-normal:                   #000000,  #FFFFFF,  #000000,  #282828,  #FFFFFF
 rofi.color-window:                   #000000,      #000000
-rofi.padding:                        20
+rofi.padding:                        25
 rofi.hide-scrollbar:                 true
