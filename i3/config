@@ -6,8 +6,8 @@ exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
 exec --no-startup-id picom
 exec --no-startup-id "xset -b"
-exec --no-startup-id "feh --bg-scale /home/probe/.config/i3/wal.jpg" 
-#exec_always --no-startup-id /home/probe/.config/polybar/launch.sh
+exec_always --no-startup-id "feh --bg-scale /home/probe/.config/i3/wal.jpg" 
+exec_always --no-startup-id /home/probe/.config/polybar/launch.sh
 font pango:Cantarell 10
 
 for_window [class="^.*"] border pixel 0 
@@ -118,12 +118,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-	font pango: Hack 9
-	position top
-	colors {
-		background #00000020
-	}
-	i3bar_command i3bar -t
-	status_command i3blocks
-}
+#bar {
+#	font pango: Hack 9
+#	position top
+#	colors {
+#		background #00000020
+#	}
+#	i3bar_command i3bar -t
+#	status_command i3blocks
+#}
