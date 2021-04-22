@@ -10,7 +10,7 @@ IN_SIG="eDP1"
 choices="Internal\nDualSetup\nExternal\nClone"
 
 # Select options
-chosen=$(echo -e $choices | rofi -dmenu -theme /home/probe/.config/i3/probe.rasi)
+chosen=$(echo -e $choices | rofi -dmenu)
 
 # Signal classification based on port directive
 if [ `xrandr | grep DP1 | grep -c ' connected '` -eq 1 ]; then
