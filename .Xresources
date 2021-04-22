@@ -68,7 +68,8 @@
 
 URxvt.blinkingCursor: 1
 URxvt.cursorUnderline: true
-URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14:antialiasing=true:size=14
+URxvt*font: xft:BlexMonoNerdFontMono:pixelsize=14
+!:antialiasing=true:size=14
 URxvt*scrollBar: false
 Xft.antialias: true
 Xft.rgba: rgb
