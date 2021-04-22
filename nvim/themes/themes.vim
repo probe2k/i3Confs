@@ -1,8 +1,6 @@
 set showtabline=2
 set noshowmode
 set autoindent
-set autoread
-set guicursor=
 
 set encoding=UTF-8
  
