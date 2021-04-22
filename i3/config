@@ -38,10 +38,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 && pkill -R
 floating_modifier $mod
 focus_follows_mouse no
 
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+Shift+Return exec brave
-bindsym $mod+Shift+f exec urxvt -e ranger
-bindsym $mod+Shift+p exec urxvt -e htop
+bindsym $mod+Shift+f exec --no-startup-id st -e ranger
+bindsym $mod+Shift+p exec --no-startup-id st -e htop
 bindsym $mod+Shift+q kill
 bindsym XF86Search exec "rofi -show run"
 
