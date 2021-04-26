@@ -35,3 +35,11 @@ if [ "`id -u`" -eq 0 ]; then
 else
 	PS1="\[\033[m\]|\[\e[1m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
 fi
+
+source "/home/probe/.local/share/blesh/ble.sh" --attach=none
+
+# ... other bashrc settings ...
+
+# Add the following line at the end of bashrc
+[[ ${BLE_VERSION-} ]] && ble-attach
+
