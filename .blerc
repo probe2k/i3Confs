@@ -1,0 +1,2 @@
+bleopt complete_auto_complete=
+ble-color-setface syntax_error fg=red,bold
