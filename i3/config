@@ -1,6 +1,6 @@
 set $mod Mod4
 
-gaps inner 30
+gaps inner 25
 gaps outer 0
 exec --no-startup-id "xrandr -r 47"
 exec --no-startup-id "xrandr --output eDP1 --gamma 0.8:0.8:0.8"
@@ -118,12 +118,3 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#bar {
-#	font pango: Hack 9
-#	position top
-#	colors {
-#		background #00000020
-#	}
-#	i3bar_command i3bar -t
-#	status_command i3blocks
-#}
