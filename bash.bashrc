@@ -19,27 +19,34 @@ esac
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
-# PS1="\[\033[0;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[0;39m\]\e[95m\\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[0;31m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$\[\e[0m\] "
-
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias emu='/home/probe/Android/Sdk/emulator/emulator -avd Pixel_3 -qemu --enable-kvm'
+alias scr=' ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -preset ultrafast "/home/probe/rec_`date +%b-%d-%I:%M:%S`.mp4"'
+alias scra='ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -f alsa -i default -preset ultrafast "/home/probe/rec_`date +%b-%d-%I:%M:%S`.mp4"'
 
-#PS1=$(if [[ ${EUID} == 0 ]]; then echo "\n[\[\e[31m\]\e[1m\u\[\e[m\]] [\[\e[36m\]\h\[\e[m\]] [\[\e[34m\]\w\[\e[m\]]\n\[\e[33m\]# >\[\e[m\] "; else echo "\n[\[\e[32m\]\u\[\e[m\]] [\[\e[36m\]\h\[\e[m\]] [\[\e[34m\]\w\[\e[m\]]\n\[\e[93m\]$ >\[\e[m\] "; fi)
 
-#PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-
+#if [ "`id -u`" -eq 0 ]; then
+#    PS1="\[\033[m\]|\[\e[1;31m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
+#else
+#	PS1="\[\033[m\]|\[\e[1m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
+#fi
 
 if [ "`id -u`" -eq 0 ]; then
-    PS1="\[\033[m\]|\[\e[1;31m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
+	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 1)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 else
-	PS1="\[\033[m\]|\[\e[1m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
+	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 fi
 
-source "/home/probe/.local/share/blesh/ble.sh" --attach=none
-
-# ... other bashrc settings ...
-
-# Add the following line at the end of bashrc
-[[ ${BLE_VERSION-} ]] && ble-attach
-
+echo -e " \033[0;31m
+██▓███   ██▀███   ▒█████   ▄▄▄▄   ▓█████
+▓██░  ██▒▓██ ▒ ██▒▒██▒  ██▒▓█████▄ ▓█   ▀
+▓██░ ██▓▒▓██ ░▄█ ▒▒██░  ██▒▒██▒ ▄██▒███
+▒██▄█▓▒ ▒▒██▀▀█▄  ▒██   ██░▒██░█▀  ▒▓█  ▄
+▒██▒ ░  ░░██▓ ▒██▒░ ████▓▒░░▓█  ▀█▓░▒████▒
+▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░▒▓███▀▒░░ ▒░ ░
+░▒ ░       ░▒ ░ ▒░  ░ ▒ ▒░ ▒░▒   ░  ░ ░  ░
+░░         ░░   ░ ░ ░ ░ ▒   ░    ░    ░
+            ░         ░ ░   ░         ░  ░
+        \033[0;32m       Lord of Darkness  \033[0;31m░\033[0;34m probe2k
+\033[0m"
