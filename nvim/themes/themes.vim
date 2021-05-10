@@ -24,6 +24,8 @@ set number
 set ignorecase
 set smartcase
 
+set guicursor=
+
 let g:lightline = {
     \ 'colorscheme': 'molokai',
     \ 'active': {
