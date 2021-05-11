@@ -39,9 +39,9 @@ alias scra='ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -f alsa -i defau
 #fi
 
 if [ "`id -u`" -eq 0 ]; then
-	PS1="\[\033[01;36m\]\w \[\033[01;31m\]❯❯ \[\e[0m\]"
+	PS1="\[\033[01;33m\]\w \[\033[01;31m\]❯❯ \[\e[0m\]"
 else
-	PS1="\[\033[01;36m\]\w \[\033[01;32m\]❯ \[\e[0m\]"
+	PS1="\[\033[01;33m\]\w \[\033[01;36m\]❯ \[\e[0m\]"
 fi
 
 echo -e " \033[0;31m
