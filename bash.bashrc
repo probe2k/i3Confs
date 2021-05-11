@@ -27,15 +27,21 @@ alias scra='ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -f alsa -i defau
 
 
 #if [ "`id -u`" -eq 0 ]; then
-#    PS1="\[\033[m\]|\[\e[1;31m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
+#	PS1="\[\033[m\]|\[\e[1;31m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
 #else
 #	PS1="\[\033[m\]|\[\e[1m\]\u\[\033[m\]|\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\w]> \[\e[0m\]"
 #fi
 
+#if [ "`id -u`" -eq 0 ]; then
+#	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 1)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+#else
+#	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+#fi
+
 if [ "`id -u`" -eq 0 ]; then
-	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 1)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+	PS1="\[\033[01;36m\]\w \[\033[01;31m\]❯❯ \[\e[0m\]"
 else
-	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+	PS1="\[\033[01;36m\]\w \[\033[01;32m\]❯ \[\e[0m\]"
 fi
 
 echo -e " \033[0;31m
