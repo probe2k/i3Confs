@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Map to XF86 keysym - Dell Inspiron 5570 -- $mod+p mapper -- Maps respective to F8
 # Configure executable permission - user access for dmenu `chmod + x`
