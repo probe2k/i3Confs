@@ -12,3 +12,5 @@ nnoremap <C-Right> <C-W><C-L>
 nnoremap <C-Left> <C-W><C-H>
 nnoremap <A-=> <C-W><C-<>
 nnoremap <A--> <C-W><C->>
+nnoremap <A-Down> <C-W><C-+>
+nnoremap <A-Up> <C-W><C-->
