@@ -21,7 +21,7 @@ esac
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias emu='/home/probe/Android/Sdk/emulator/emulator -avd Pixel_3 -qemu --enable-kvm'
+#alias emu='/home/probe/Android/Sdk/emulator/emulator -avd Pixel_3 -qemu --enable-kvm'
 alias scr=' ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -preset ultrafast "/home/probe/rec_`date +%b-%d-%I:%M:%S`.mp4"'
 alias scra='ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -f alsa -i default -preset ultrafast "/home/probe/rec_`date +%b-%d-%I:%M:%S`.mp4"'
 
@@ -38,21 +38,5 @@ alias scra='ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -f alsa -i defau
 #	PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 #fi
 
-if [ "`id -u`" -eq 0 ]; then
-	PS1="\[\033[01;33m\]\w \[\033[01;31m\]❯❯ \[\e[0m\]"
-else
-	PS1="\[\033[01;33m\]\w \[\033[01;36m\]❯ \[\e[0m\]"
-fi
+[ "`id -u`" = 0 ] && PS1="\[\033[01;33m\]\w \[\033[01;31m\]❯❯ \[\e[0m\]" || PS1="\[\033[01;33m\]\w \[\033[01;36m\]❯ \[\e[0m\]"
 
-echo -e " \033[0;31m
-██▓███   ██▀███   ▒█████   ▄▄▄▄   ▓█████
-▓██░  ██▒▓██ ▒ ██▒▒██▒  ██▒▓█████▄ ▓█   ▀
-▓██░ ██▓▒▓██ ░▄█ ▒▒██░  ██▒▒██▒ ▄██▒███
-▒██▄█▓▒ ▒▒██▀▀█▄  ▒██   ██░▒██░█▀  ▒▓█  ▄
-▒██▒ ░  ░░██▓ ▒██▒░ ████▓▒░░▓█  ▀█▓░▒████▒
-▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░▒▓███▀▒░░ ▒░ ░
-░▒ ░       ░▒ ░ ▒░  ░ ▒ ▒░ ▒░▒   ░  ░ ░  ░
-░░         ░░   ░ ░ ░ ░ ▒   ░    ░    ░
-            ░         ░ ░   ░         ░  ░
-        \033[0;32m       Lord of Darkness  \033[0;31m░\033[0;34m probe2k
-\033[0m"
