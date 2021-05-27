@@ -19,6 +19,7 @@ set nowrap
 set cursorline
 set relativenumber
 set number
+set clipboard+=unnamedplus
 
 " Search
 set ignorecase
