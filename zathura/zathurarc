@@ -1,8 +1,7 @@
 set statusbar-h-padding 0
 set statusbar-v-padding 0
-set default-bg \#282828
-set recolor
-set recolor-lightcolor \#282828
+set default-bg \#28282850
+set guioptions None
 set page-padding 1
 map u scroll half-up
 map d scroll half-down
