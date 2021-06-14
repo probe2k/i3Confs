@@ -9,7 +9,7 @@ call plug#begin('/home/probe/.config/nvim/plugged')
 	Plug 'mengelbrecht/lightline-bufferline'
 "	Plug 'junegunn/goyo.vim'
 	Plug 'ryanoasis/vim-devicons'
-"	Plug 'dart-lang/dart-vim-plugin'
+	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-markdown'
 "	Plug 'vim-scripts/fountain.vim'

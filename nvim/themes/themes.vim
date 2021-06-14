@@ -19,7 +19,6 @@ set nowrap
 set cursorline
 set relativenumber
 set number
-set clipboard+=unnamedplus
 
 " Search
 set ignorecase
@@ -70,3 +69,14 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 highlight clear LineNr
 let g:lightline#bufferline#enable_devicons = 1
+autocmd VimEnter * call SetupLightlineColors()
+function SetupLightlineColors() abort
+  " transparent background in statusbar
+  let l:palette = lightline#palette()
+
+  let l:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+  let l:palette.inactive.middle = l:palette.normal.middle
+  let l:palette.tabline.middle = l:palette.normal.middle
+
+  call lightline#colorscheme()
+endfunction
