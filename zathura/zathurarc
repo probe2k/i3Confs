@@ -1,6 +1,7 @@
 set statusbar-h-padding 0
 set statusbar-v-padding 0
-set default-bg \#00000020
+set default-bg \#00000050
+set recolor
 set guioptions None
 set recolor-lightcolor \#000000
 set page-padding 1
