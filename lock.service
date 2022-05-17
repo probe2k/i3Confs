@@ -1,5 +1,6 @@
 [Unit]
 Description=Lock the screen on resume from suspend
+Before=sleep.traget suspend.target
 
 [Service]
 User=probe
@@ -9,4 +10,3 @@ ExecStart=/home/probe/.config/scripts/lock.sh
 
 [Install]
 WantedBy=sleep.target suspend.target
-Before=sleep.traget suspend.target
