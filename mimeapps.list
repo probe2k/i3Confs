@@ -16,6 +16,7 @@ application/x-extension-xhtml=brave.desktop;
 application/x-extension-xht=brave.desktop;
 image/webp=feh.desktop;
 video/mp4=mpv.desktop;
+text/plain=brave.desktop;
 
 [Default Applications]
 text/html=brave.desktop
@@ -23,7 +24,7 @@ x-scheme-handler/http=brave.desktop
 x-scheme-handler/https=brave.desktop
 x-scheme-handler/about=brave.desktop
 x-scheme-handler/postman=PostmanCanary.desktop
-text/plain=nvim.desktop
+text/plain=brave.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-6FLJO1.desktop
 x-scheme-handler/chrome=brave.desktop
 application/x-extension-htm=brave.desktop
