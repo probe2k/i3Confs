@@ -4,7 +4,6 @@ Before=sleep.traget suspend.target hibernate.target
 
 [Service]
 User=probe
-Type=forking
 Environment=DISPLAY=:0
 ExecStart=/home/probe/.config/scripts/lock.sh
 
