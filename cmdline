@@ -1,1 +1,1 @@
-BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=85eea1c4-e823-4e5f-ba09-ddb201f3c0f9 rw resume=/dev/sda4 loglevel=3 quiet amdgpu.runpm=0 libahci.ignore_sss=1 i915.enable_fbc=1
+root=/dev/nvme0n1p2 rw initrd=/initramfs-linux.img amdgpu.runpm=0 radeon.modeset=0 libahci.ignore_sss=1 mitigations=off resume=/dev/sda4
